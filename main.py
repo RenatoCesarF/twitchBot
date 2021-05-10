@@ -1,7 +1,7 @@
 import utils as utils
 import twitchio
 from twitchio.ext import commands
-
+import sys
 
 from commands.commandsList import commandsList
 from commands.mudaATela import ChangeScreen
@@ -21,7 +21,9 @@ projectsPossibleRequests = ['projects','projetos']
 def main():
 
     bot = Bot()
-    print("\nIT'S ALIVE!!!!\n")
+    print("\nIT'S ALIVE!!!!")
+    sys.stdout.write("IT'S ALIVE!!!!\n")
+    sys.stdout.flush()
     bot.run()
 
 class Bot(commands.Bot):
