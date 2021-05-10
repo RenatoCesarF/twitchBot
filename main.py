@@ -19,10 +19,8 @@ projectsPossibleRequests = ['projects','projetos']
 
 
 def main():
-
     bot = Bot()
     print("\nIT'S ALIVE!!!!")
-    sys.stdout.write("IT'S ALIVE!!!!\n")
     sys.stdout.flush()
     bot.run()
 
