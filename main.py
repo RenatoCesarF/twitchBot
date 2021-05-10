@@ -15,6 +15,13 @@ envVars = utils.EnvVars()
 commandsPossibleRequests = ['commands', 'comandos', 'help', 'bot']
 projectsPossibleRequests = ['projects','projetos']
 
+
+
+def main():
+    bot = Bot()
+    print("\nIT'S ALIVE!!!!\n")
+    bot.run()
+
 class Bot(commands.Bot):
 
     def __init__(self):
@@ -96,8 +103,5 @@ class Bot(commands.Bot):
     async def pix(self,ctx):
         await ctx.send("Ainda estamos trabalhando nisso...")#TODO: página no meu site onde vai ter a lista de apoiadores, o QR Code do pix e o QR Code do picpay
 
-
 if __name__ == "__main__":
-    bot = Bot()
-    print("\nIT'S ALIVE!!!!\n")
-    bot.run()
+    main()
