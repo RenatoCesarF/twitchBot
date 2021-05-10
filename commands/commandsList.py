@@ -12,7 +12,7 @@ async def commandsList(self, ctx):
     ]
 
     for command in ComandList:
-        allComands += " => 🔹 {} | ".format(command) # ->
+        allComands += " -> 🔹 {} | ".format(command) # 
         
     await ctx.send(allComands)
 
