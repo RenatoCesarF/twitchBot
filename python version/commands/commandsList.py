@@ -6,11 +6,14 @@ async def commandsList(self, ctx):
         "!<nomeDoProjeto>: posta o repositório do projeto",
         "!bot !help !comandos: mostrar lista de comandos disponíveis",
         "!<nomeDaRedeSocial>: link pra rede social",
+        "!doação: link doar atravez do PayPal",
+        "!pix: QR code pra colaborar por Pix",
+        "!picpay: QR code pra colaborar com o Picpay",
     ]
 
     for command in ComandList:
-        allComands += " => 🔹 {} | ".format(command)
-
+        allComands += " => 🔹 {} | ".format(command) # ->
+        
     await ctx.send(allComands)
 
 

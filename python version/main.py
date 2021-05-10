@@ -95,8 +95,18 @@ class Bot(commands.Bot):
     @commands.command(name="overlay")
     async def soundBoard(self,ctx):
         await projectModel(self, ctx,"🖥️ StreamOverlay","https://github.com/RenatoCesarF/StreamOverlay")
-  
+    
+    @commands.command(name="doação")
+    async def doacao(self,ctx):
+        await ctx.send("Você pode fazer uma colaboração atravez do link: https://streamelements.com/renatocesarf/tip e entrar pra lista de colaboradores. Se prefirir pode usar o Pix -> !pix pra pegar o QRCode ")
+    
+    @commands.command(name="picpay")
+    async def picpay(self,ctx):
+        await ctx.send("Ainda estamos trabalhando nisso...")
 
+    @commands.command(name="pix")
+    async def pix(self,ctx):
+        await ctx.send("Ainda estamos trabalhando nisso...")#TODO: página no meu site onde vai ter a lista de apoiadores, o QR Code do pix e o QR Code do picpay
 
 bot = Bot()
 print("\nIT'S ALIVE!!!!\n")
