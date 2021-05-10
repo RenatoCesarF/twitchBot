@@ -96,6 +96,8 @@ class Bot(commands.Bot):
     async def pix(self,ctx):
         await ctx.send("Ainda estamos trabalhando nisso...")#TODO: página no meu site onde vai ter a lista de apoiadores, o QR Code do pix e o QR Code do picpay
 
-bot = Bot()
-print("\nIT'S ALIVE!!!!\n")
-bot.run()
+
+if __name__ == "__main__":
+    bot = Bot()
+    print("\nIT'S ALIVE!!!!\n")
+    bot.run()
