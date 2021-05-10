@@ -1,6 +1,7 @@
 import utils as utils
-from twitchio.ext import commands
 import twitchio
+from twitchio.ext import commands
+
 
 from commands.commandsList import commandsList
 from commands.mudaATela import ChangeScreen
@@ -10,7 +11,7 @@ from commands.socialMediaModel import socialMediaModel
 from commands.projectModel import projectModel
 from commands.socialMediaList import socialMediaList
 
-envVars = utils.EnvVars()
+
 
 commandsPossibleRequests = ['commands', 'comandos', 'help', 'bot']
 projectsPossibleRequests = ['projects','projetos']
@@ -18,6 +19,7 @@ projectsPossibleRequests = ['projects','projetos']
 
 
 def main():
+
     bot = Bot()
     print("\nIT'S ALIVE!!!!\n")
     bot.run()
@@ -104,4 +106,5 @@ class Bot(commands.Bot):
         await ctx.send("Ainda estamos trabalhando nisso...")#TODO: página no meu site onde vai ter a lista de apoiadores, o QR Code do pix e o QR Code do picpay
 
 if __name__ == "__main__":
+    envVars = utils.EnvVars()
     main()
