@@ -103,8 +103,8 @@ class Bot(commands.Bot):
 
     @commands.command(name="discord")
     async def discord(self, ctx):
-        await ctx.send("Entre no nosso servidor Discord pra conversar, dar ideia e ficar por dentro 😉! https://discord.gg/q5THHP42w6 https://discord.gg/q5THHP42w6")
-        
+        await ctx.send("Entre no nosso servidor Discord pra conversar, dar ideia e ficar por dentro 😉! https://discord.gg/q5THHP42w6")
+
 if __name__ == "__main__":
     envVars = utils.EnvVars()
     main()
