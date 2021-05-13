@@ -93,18 +93,18 @@ class Bot(commands.Bot):
     async def showAboutMeInformation(self,ctx):
         await euInfo(self,ctx)
    
-    @commands.command(name="picpay")
+    @commands.command(aliases=["picpay","pix"])
     async def picpay(self,ctx):
-        await ctx.send("Ainda estamos trabalhando nisso...")
+        await ctx.send("Pra fazer Contribuições por Pix ou Picpay entre no meu site -> https://renatocesar.netlify.app/contributors")
 
     @commands.command(aliases=["doação","doacao","donate"])
     async def Cdoacao(self,ctx):
         await ctx.send("Você pode fazer uma colaboração atravez do link: https://streamelements.com/renatocesarf/tip e entrar pra lista de colaboradores. Se prefirir pode usar o Pix -> !pix pra pegar o QRCode ou por -> !picpay ")
-      
-    @commands.command(name="pix")
-    async def pix(self,ctx):
-        await ctx.send("Ainda estamos trabalhando nisso...")#TODO: página no meu site onde vai ter a lista de apoiadores, o QR Code do pix e o QR Code do picpay
 
+    @commands.command(name="discord")
+    async def discord(self, ctx):
+        await ctx.send("Entre no nosso servidor Discord pra conversar, dar ideia e ficar por dentro 😉! https://discord.gg/q5THHP42w6 https://discord.gg/q5THHP42w6")
+        
 if __name__ == "__main__":
     envVars = utils.EnvVars()
     main()
