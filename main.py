@@ -10,7 +10,7 @@ from commands.euInfo import euInfo
 from commands.socialMediaModel import socialMediaModel
 from commands.projectModel import projectModel
 from commands.socialMediaList import socialMediaList
-from commands.languages import languages
+
 commandsPossibleRequests = ['commands', 'comandos', 'help', 'bot']
 projectsPossibleRequests = ['projects','projetos']
 
