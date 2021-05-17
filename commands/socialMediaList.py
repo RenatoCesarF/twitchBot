@@ -6,6 +6,7 @@ async def socialMediaList(self, ctx):
         "!insta",
         "!twitter",
         "!linkedin",
+        "!discord",
       
     ]
 
