@@ -83,6 +83,10 @@ class Bot(commands.Bot):
     async def _soundBoard(self,ctx):
         await projectModel(self, ctx,"🔊 SoundBoard","https://github.com/RenatoCesarF/Soundboard")
     
+    @commands.command(name="rings")
+    async def _soundBoard(self,ctx):
+        await projectModel(self, ctx,"🥏 Rings","https://github.com/RenatoCesarF/Rings")
+    
     @commands.command(name="discordbot")
     async def _soundBoard(self,ctx):
         await projectModel(self, ctx,"🤖 DeltaBot","https://github.com/RenatoCesarF/Delta-Bot")
@@ -97,7 +101,7 @@ class Bot(commands.Bot):
 
     @commands.command(aliases=["doação","doacao","donate"])
     async def _doacao(self,ctx):
-        await ctx.send("Você pode fazer uma colaboração atravez do link: https://streamelements.com/renatocesarf/tip e entrar pra lista de colaboradores. Se prefirir pode usar o Pix -> !pix pra pegar o QRCode ou por -> !picpay ")
+        await ctx.send("Você pode fazer uma colaboração atravez do link:  https://streamlabs.com/renatocesarf e entrar pra lista de colaboradores. Se prefirir pode usar o Pix -> !pix pra pegar o QRCode ou por -> !picpay ")
 
     @commands.command(name="discord")
     async def _discord(self, ctx):
